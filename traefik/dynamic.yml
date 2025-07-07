@@ -1,0 +1,12 @@
+http:
+  middlewares:
+    redirect-to-https:
+      redirectScheme:
+        scheme: https
+
+tls:
+  stores:
+    default:
+      defaultCertificate:
+        certFile: /etc/ssl/certs/ssl-cert-snakeoil.pem
+        keyFile: /etc/ssl/private/ssl-cert-snakeoil.key
